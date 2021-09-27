@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized T shirts Order</title>
+</head>
+
+<body>
+    <h1>Welcome to Vesitcart</h1>
+    <h2>Enter Order details</h2>
+    <form action="nothing.php" method="get">
+        <label for="tagline">Enter Tagline for T-Shirt:</label>
+        <input type="text" name="Tagline" id="tagline"><br>
+        <label for="color">Choose Color:</label>
+        <input type="color" name="Tshirtcolor" id="color"><br>
+        <p>Enter Size:</p>
+        <input type="radio" name="Size" id="size1" value="Small">
+        <label for="size1">Small</label><br>
+        <input type="radio" name="Size" id="size2" value="Medium">
+        <label for="size2">Medium</label><br>
+        <input type="radio" name="Size" id="size3" value="Large">
+        <label for="size3">Large</label><br>
+        <label for="Quantity">Quantity:</label>
+        <input type="number" name="quantity" id="Quantity" min="1" max="10"><br>
+        <label for="date">Date of order:</label>
+        <input type="date" name="date" id="date"><br>
+        <label for="address">Enter Your address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
