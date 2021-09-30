@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized T shirts Order</title>
+</head>
+
+<body>
+    <h1>Welcome to Vesitcart</h1>
+    <img src="cyo-mens.png" alt="Display">
+
+    <form action="nothing.php" method="get">
+        <fieldset>
+            <legend>
+                <h2>Enter Order details</h2>
+            </legend>
+            <label for="tagline">Enter Tagline for T-Shirt:</label>
+            <input type="text" name="Tagline" id="tagline" placeholder="Enter Tagline e.g Avengers"><br><br>
+            <label for="color">Choose Color:</label>
+            <input type="color" name="Tshirtcolor" id="color"><br><br>
+            <label for="size">Choose size</label>
+            <select id="size" name="T-shirt size">
+                <option value="Xsmall">Xsmall</option>
+                <option value="small">small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Xlarge">Xlarges</option>
+            </select>
+
+            <p>Enter t-shirt type </p>
+            <input type="radio" name="t-shirt type" id="type1" value="V-neck">
+            <label for="type1"><img src="v-neck-t-shirt-500x500.jpg" alt="V-neck" width="150px" height="150px"></label>
+            <input type="radio" name="t-shirt type" id="type2" value="Round-neck">
+            <label for="type2"><img src="round neck.jpg" alt="Round-neck" width="150px" height="150px"></label>
+            <input type="radio" name="t-shirt type" id="type3" value="long-sleeve">
+            <label for="type3"><img src="long-sleeve-v-neck-tight.jpg" alt="long-sleeve" width="150px"
+                    height="150px"></label>
+            <input type="radio" name="t-shirt type" id="type4" value="Polo">
+            <label for="type4"><img src="polo.jpg" alt="Polo" width="150px" height="150px"></label>
+            <br><br><br>
+            <label for="Quantity">Quantity:</label>
+            <input type="number" name="quantity" id="Quantity" min="1" max="10"><br><br><br>
+            <label for="custom">Enter any image you want to print:</label>
+            <input type="file" name="custom" id="custom">
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Enter Personal Details:</h2>
+            </legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="" placeholder="Enter firstname e.g Tanmay"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="" placeholder="Enter lastname e.g Mahajan"><br><br>
+            <label for="phone">Enter Your Telephone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-12345-67890"
+                pattern="[+]{1}-[0-9]{2}-[0-9]{5}-[0-9]{5}" required><br><br>
+            <small>Format:+9112345-67890</small><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="date">Date of order:</label>
+            <input type="date" name="date" id="date"><br><br>
+            <label for="address">Any Suggestions:</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
